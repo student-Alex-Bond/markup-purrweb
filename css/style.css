@@ -1,31 +1,51 @@
-body{
+body {
     background-color: #000000;
     color: white;
     font-family: 'Monsterrat', 'Arial', sans-serif;
 }
 
-.menu__list{
+.header__logo {
+    margin-right: 8px;
+}
+
+.menu__list {
     list-style: none;
     display: flex;
     align-items: center;
     margin: 0;
     padding: 0;
 }
-.menu__item{
+
+.menu__item, .menu__link {
+    position: relative;
     display: flex;
-   justify-content: center;
+    justify-content: center;
     align-items: center;
+    color: inherit;
+    font-family: 'Noto Sans 500','Arial', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
 }
-.name-company{
- background-image: url("../css/images/company-name.png");
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.name-company {
+    text-decoration: none;
+}
+.menu__item + .menu__item{
+    margin-left: 148px;
+}
+.user:before{
+    content: '';
+    width: 26px;
+    height: 25px;
+    top: 0;
+    left: -39px;
+    position: absolute;
+    background-image: url("../css/images/user.png");
     background-repeat: no-repeat;
 }
 
-.menu__link{
-    width: 96px;
-    height: 25px;
-    border: 1px solid white;
-font-size: 25px;
-    font-family: Monsterrat-Bold, sans-serif;
-    color: inherit;
-}
+

@@ -6,21 +6,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>No Tab</title>
 </head>
 <header class="header-page">
-  <nav>
-    <ul class="menu__list">
-      <li class="menu__item">
-        <img src="css/images/logo.png" alt="logotype" width="107" height="109">
-        <a class="menu__link name-company" href="#"></a>
-      </li>
-      <li  class="menu__item">
-        <a class="menu__link" href="#">Login</a>
-      </li>
-    </ul>
-  </nav>
+  <div class="container">
+    <nav>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link name-company" href="#">
+            <img class="header__logo" src="css/images/logo.png" alt="logotype company" width="107" height="109">
+            <img src="css/images/company-name.png" alt="name company" width="96" height="25">
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link user" href="#">Login</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
 <main>
   <section class="main-content">

@@ -1,0 +1,31 @@
+body{
+    background-color: #000000;
+    color: white;
+    font-family: 'Monsterrat', 'Arial', sans-serif;
+}
+
+.menu__list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.menu__item{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+}
+.name-company{
+ background-image: url("../css/images/company-name.png");
+    background-repeat: no-repeat;
+}
+
+.menu__link{
+    width: 96px;
+    height: 25px;
+    border: 1px solid white;
+font-size: 25px;
+    font-family: Monsterrat-Bold, sans-serif;
+    color: inherit;
+}

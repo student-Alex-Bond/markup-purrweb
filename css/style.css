@@ -1,7 +1,14 @@
 body {
+    width: 100vw;
+    position: relative;
     background-color: #000000;
     color: white;
     font-family: 'Monsterrat', 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
 }
 
 .header__logo {
@@ -22,22 +29,26 @@ body {
     justify-content: center;
     align-items: center;
     color: inherit;
-    font-family: 'Noto Sans 500','Arial', sans-serif;
+    font-family: 'Noto Sans 500', 'Arial', sans-serif;
     font-size: 18px;
     line-height: 25px;
 }
-.container{
+
+.container {
     width: 1440px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .name-company {
     text-decoration: none;
 }
-.menu__item + .menu__item{
+
+.menu__item + .menu__item {
     margin-left: 148px;
 }
-.user:before{
+
+.user:before {
     content: '';
     width: 26px;
     height: 25px;
@@ -46,6 +57,38 @@ body {
     position: absolute;
     background-image: url("../css/images/user.png");
     background-repeat: no-repeat;
+}
+
+
+.decoration {
+    width: 663px;
+    height: 783px;
+
+    position: absolute;
+    right: -150px;
+    top: -107px;
+
+    background: rgba(250, 0, 255, 0.2);
+    filter: blur(250px);
+    transform: rotate(-105.26deg);
+}
+
+.advantage__title {
+    font-family: Monsterrat-Bold, 'Arial', sans-serif;
+    font-size: 64px;
+    line-height: 70px;
+}
+.advantage__description{
+    font-family: 'Noto Sans 500','Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.advantage__list {
+    display: flex;
+    justify-content: space-between;
 }
 
 

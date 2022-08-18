@@ -1,5 +1,4 @@
 body {
-    width: 100vw;
     position: relative;
     background-color: #000000;
     color: white;
@@ -35,7 +34,7 @@ ul {
 }
 
 .container {
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -71,24 +70,79 @@ ul {
     background: rgba(250, 0, 255, 0.2);
     filter: blur(250px);
     transform: rotate(-105.26deg);
+    z-index: -5;
 }
 
 .advantage__title {
     font-family: Monsterrat-Bold, 'Arial', sans-serif;
     font-size: 64px;
     line-height: 70px;
+    margin-bottom: 129px;
 }
-.advantage__description{
-    font-family: 'Noto Sans 500','Arial', sans-serif;
+.advantage__text{
+    position: relative;
+}
+.advantage__description {
+    position: relative;
+    font-family: 'Noto Sans 500', 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 27px;
+    padding-left: 125px;
+}
+.advantage__purple-circle{
+    position: absolute;
+    left: 0;
+    top: 257px;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+
+}
+.advantage__purple-circle:after{
+    content: url("../css/images/purlpe_circle.png");
+    position: absolute;
+    top: -448px;
+    left: -74px;
+
+}
+
+
+.advantage__purple-circle:before {
+    content: '';
+    position: absolute;
+    width: 139px;
+    height: 0;
+    left: -12px;
+    top:-246px;
+
+    border: 2px solid #FFFFFF;
+    transform: rotate(120.61deg);
 }
 
 .advantage__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.advantage__item {
+    position: relative;
+}
+
+.advantage__content {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: -3;
+}
+
+.phone__eyebrow {
+    position: absolute;
+    top: 31px;
+    left: 50px;
+
 }
 
 

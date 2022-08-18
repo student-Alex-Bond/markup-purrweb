@@ -4,6 +4,7 @@ body {
     color: white;
     font-family: 'Monsterrat', 'Arial', sans-serif;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 ul {
@@ -34,7 +35,7 @@ ul {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -64,7 +65,7 @@ ul {
     height: 783px;
 
     position: absolute;
-    right: -150px;
+    right: -0;
     top: -107px;
 
     background: rgba(250, 0, 255, 0.2);
@@ -77,11 +78,13 @@ ul {
     font-family: Monsterrat-Bold, 'Arial', sans-serif;
     font-size: 64px;
     line-height: 70px;
-    margin-bottom: 129px;
+    margin: 130px 0 129px 0;
 }
-.advantage__text{
+
+.advantage__text {
     position: relative;
 }
+
 .advantage__description {
     position: relative;
     font-family: 'Noto Sans 500', 'Arial', sans-serif;
@@ -91,16 +94,19 @@ ul {
     line-height: 27px;
     padding-left: 125px;
 }
-.advantage__purple-circle{
+
+.advantage__purple-circle {
     position: absolute;
     left: 0;
     top: 257px;
     width: 125px;
     height: 125px;
     border-radius: 50%;
+    z-index: -5;
 
 }
-.advantage__purple-circle:after{
+
+.advantage__purple-circle:after {
     content: url("../css/images/purlpe_circle.png");
     position: absolute;
     top: -448px;
@@ -115,7 +121,7 @@ ul {
     width: 139px;
     height: 0;
     left: -12px;
-    top:-246px;
+    top: -246px;
 
     border: 2px solid #FFFFFF;
     transform: rotate(120.61deg);
@@ -125,6 +131,8 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0;
+    padding: 18px 0 0 0;
 }
 
 .advantage__item {
@@ -142,6 +150,23 @@ ul {
     position: absolute;
     top: 31px;
     left: 50px;
+
+}
+
+.download__title {
+    margin: 0;
+    font-family: 'Monsterrat-Bold', 'Arial', sans-serif;
+    font-size: 35px;
+    line-height: 70px;
+}
+.download{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 83px 0 180px 0 ;
+}
+.download__link + .download__link {
+    margin-left: 25px;
 
 }
 

@@ -15,6 +15,9 @@ ul {
     margin: 0;
     padding: 0;
 }
+p, h2{
+    margin: 0;
+}
 
 .header__logo {
     margin-right: 8px;
@@ -280,6 +283,41 @@ ul {
 
     color: #FFFFFF;
 }
+.mission{
 
+    display: flex;
+    justify-content: right;
+}
+.mission__container{
+    position: relative;
+    width: 358px;
+}
 
+.mission__title{
+    font-family: 'Monsterrat-Bold', 'Arial', sans-serif;
+    font-size: 51px;
+    line-height: 62px;
+
+    margin-bottom: 23px;
+}
+.mission__text{
+    font-family: 'Noto Sans', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    padding-right: 52px;
+}
+.bg-circle{
+    z-index: -1;
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 87px;
+    width: 85px;
+    height: 85px;
+    background: #F101BF;
+    opacity: 0.7;
+    filter: blur(40px);
+}
 

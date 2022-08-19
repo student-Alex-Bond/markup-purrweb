@@ -5,6 +5,7 @@ body {
     color: white;
     font-family: 'Monsterrat', 'Arial', sans-serif;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 ul {
@@ -64,7 +65,7 @@ ul {
     width: 663px;
     height: 783px;
 
-    position: fixed;
+    position: absolute;
     right: -0;
     top: -107px;
 
